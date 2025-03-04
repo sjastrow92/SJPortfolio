@@ -11,20 +11,13 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/few.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -69,24 +62,27 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Stephen Jastrow.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Philadelphia based <strong className="text-stone-100">Software Developer</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        As a dedicated software developer with a background in sales, I bring a{' '}
+        <strong className="text-stone-100">
+          unique blend of technical expertise and customer-focused communication skills.
+        </strong>{' '}
+        My transition from sales to software engineering has been driven by a passion for delivering high-quality work
+        in a collaborative team setting. I am committed to leveraging my diverse skill set to contribute effectively and
+        be a valuable asset to any team I join. Let's connect and explore how I can bring value to your organization.
       </p>
+      <br />
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/StephenJastrowResume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +100,19 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Simply said, A man who is ready to get into the nitty gritty of it all. Based in Philadelphia, I have a bit of an unconventional approach to where I find myself today. Having originally studied Sport Management, I had my eyes set on game day experiences and being as close to the glass banging action as possible. After all, I am a life long hockey player. After obtaining a bachelors degree from Temple University I embarked on a journey through several sales jobs. From enterprise software solutions to merchant processing in the healthcare space, I felt that I had reached my whit's end in the 24 hour sales cycle. Picture Jack Lemmon's character in the classic film "Glenngarry Glen Ross". So what does a man like me do when faced with the opportunity change things for the better? Learn to code of course! In March of 2024 I decided to take on one of my biggest challenges yet, a full stack web development bootcamp that will instill in me a 2 year education in 3 months time. After many late nights I can say without a doubt that it was the best decision I have ever made. It has always been a goal of mine to turn passion into paper. To love my occupation. To showcase talent in a professional space. Coding has opened that door for me. "But Stephen, tell me more about the hockey!" Of course. Since the age of five I have been in the crease, stopping pucks and crushing dreams. I have been very fortunate to still be playing at the level I do. Aside from the weeknight rec leagues, I spend my summers traveling across the country playing in cash-prize tournaments with players from the NHL, AHL, and around the world.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Philadelphia, PA', Icon: MapIcon},
+    {label: 'Age', text: '32', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'American', Icon: FlagIcon},
+    {label: 'Interests', text: 'Hockey, the outdoors, hard bass drops', Icon: SparklesIcon},
+    {label: 'Employment', text: 'Possibly you!', Icon: BuildingOffice2Icon},
+    {
+      label: 'Study',
+      text: 'University of Central Florida (full-stack bootcamp certification)',
+      text2: 'Temple University (BS Sports Management)',
+      Icon: AcademicCapIcon,
+    },
   ],
 };
 
@@ -126,7 +125,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
-        level: 10,
+        level: 1,
       },
       {
         name: 'French',
@@ -196,70 +195,35 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Jeans',
+    description:
+      'A web application that fetches color palette and image search APIs to allow the user to obtain easy to use themes for any type of creative projects.',
+    url: 'https://main--projectjeans.netlify.app/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Bucket',
+    description: 'A web application built for the purpose of creating a working bucket list',
+    url: 'https://bucket-8eis.onrender.com/',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Root2Roast',
+    description: 'Utilizing two Api fetches, this is an application for the homegrower who loves to cook! Search edible plants to grow, search a recipe for it, then discuss with other users!',
+    url: 'https://root2roast.onrender.com/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'SocialMediaApp',
+    description: 'A backend application using NoSQL to build an API for a social media web application where users can create, read, update, and delete thoughts. This uses expressJS for routing, a MongoDB database, and the Mongoose ODM',
+    url: 'https://www.youtube.com/watch?v=tKkNucbbZmw',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'sqlEmployeeTracker',
+    description: 'Using PostgreSQL with full CRUD, the user can create, read, update, and delete job roles, salaries, and managers in an employee database',
+    url: 'https://www.youtube.com/watch?v=BO5sAI2Kk5U&t=1s',
     image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -268,39 +232,81 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '03/2024 - 07/2024',
+    location: 'University of Central Florida',
+    title: 'Full Stack Software Engineering Bootcamp',
+    content: (
+      <p>
+        In this program I graduated with the base knowledge and skills to become a full stack web developer. This was a
+        12 week program that tested my ability to learn at a professional's pace, while implementing the personal
+        accountability needed to succeed. I am equipped with the skills, languages, and mindset to be a full stack
+        software engineer in REACT.
+      </p>
+    ),
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '01/2013 - 09/2016',
+    location: 'Temple University',
+    title: 'School of Sport, Tourism, and Hospitality Management',
+    content: (
+      <>
+        <p>• B.S Sport and Recreation Management – Promotions Concentration.</p>
+        <p>
+          • Montague – Ridall & Associates, Marketing Committee Chair 2016. Raised over $10,000 for the STHM Travel
+          Abroad Scholarship Fund and raised $1,500 for the Visot Foundation.
+        </p>
+        <p>• National Collegiate Roller Hockey Association, Secretary of organization 2016.</p>
+      </>
+    ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '10/2024 - Present,',
+    location: 'Savior Masks',
+    title: 'Web Developer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <>
+        <p>
+          • I am currently designing, developing and maintaining a running full-stack website that integrates both
+          front- end and back-end components, creating a seamless user experience while handling data processing and
+          server communication effectively.
+        </p>
+        <p>
+          • The application will have an interactive user interface and responsive design with user authentication and
+          authorization and will be built using React.
+        </p>
+      </>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '09/2023 - 03/2024',
+    location: 'ModMed',
+    title: 'Regional Sales Manager',
+    content: (
+      <>
+        <p>
+          • Provided robust payment solutions to healthcare providers that allowed for more efficient avenues of
+          accepting payment in and out of the doctor's office.
+        </p>
+        <p>
+          • Owned the entire sales process from prospecting to closing. This often involved multiple demonstrations to
+          executives, all of whom had their own circumstantial wants and needs.
+        </p>
+        <p>• Exceeded 150% of a $400K monthly revenue goal during my tenure.</p>
+      </>
+    ),
+  },
+  {
+    date: '11/2021 - 03/2023,',
+    location: 'JP Morgan Healthcare Payments, InstaMed',
+    title: 'Business Development Executive',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        • Sourced and closed sales new business through highly targeted and strategic outbound calls and email
+        campaigns. Coordinated and hosted virtual demonstrations with c level executives, physicians, and billing staff
+        at hospitals and medical offices. Closed and supported $1.5 million in revenue in 2022.
       </p>
     ),
   },
@@ -340,23 +346,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'skjastrow@gmail.com',
+      href: 'mailto:skjastrow@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Philadelphia, PA',
+      href: 'https://www.google.com/maps/place/Philadelphia,+PA/data=!4m2!3m1!1s0x89c6b7d8d4b54beb:0x89f514d88c3e58c1?sa=X&ved=1t:242&ictx=111',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@sirjastrow',
+      href: 'https://www.instagram.com/sirjastrow/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'sjastrow92',
+      href: 'https://github.com/sjastrow92',
     },
   ],
 };
@@ -365,9 +371,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sjastrow92'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/stephen-jastrow-4b3a49b4/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/sirjastrow/'},
 ];
