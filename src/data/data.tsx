@@ -17,9 +17,7 @@ import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -209,19 +207,22 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Root2Roast',
-    description: 'Utilizing two Api fetches, this is an application for the homegrower who loves to cook! Search edible plants to grow, search a recipe for it, then discuss with other users!',
+    description:
+      'Utilizing two Api fetches, this is an application for the homegrower who loves to cook! Search edible plants to grow, search a recipe for it, then discuss with other users!',
     url: 'https://root2roast.onrender.com/',
     image: porfolioImage3,
   },
   {
     title: 'SocialMediaApp',
-    description: 'A backend application using NoSQL to build an API for a social media web application where users can create, read, update, and delete thoughts. This uses expressJS for routing, a MongoDB database, and the Mongoose ODM',
+    description:
+      'A backend application using NoSQL to build an API for a social media web application where users can create, read, update, and delete thoughts. This uses expressJS for routing, a MongoDB database, and the Mongoose ODM',
     url: 'https://www.youtube.com/watch?v=tKkNucbbZmw',
     image: porfolioImage4,
   },
   {
     title: 'sqlEmployeeTracker',
-    description: 'Using PostgreSQL with full CRUD, the user can create, read, update, and delete job roles, salaries, and managers in an employee database',
+    description:
+      'Using PostgreSQL with full CRUD, the user can create, read, update, and delete job roles, salaries, and managers in an employee database',
     url: 'https://www.youtube.com/watch?v=BO5sAI2Kk5U&t=1s',
     image: porfolioImage5,
   },
@@ -263,15 +264,15 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: '10/2024 - Present,',
+    date: '10/2024 - Present',
     location: 'Savior Masks',
     title: 'Web Developer',
     content: (
       <>
         <p>
-          • I am currently designing, developing and maintaining a running full-stack website that integrates both
-          front- end and back-end components, creating a seamless user experience while handling data processing and
-          server communication effectively.
+          • I am currently designing, developing and maintaining a running full-stack website for a friend as a side
+          project. This application will integrate both front- end and back-end components, creating a seamless user
+          experience while handling data processing and server communication effectively.
         </p>
         <p>
           • The application will have an interactive user interface and responsive design with user authentication and
@@ -316,22 +317,10 @@ export const experience: TimelineItem[] = [
  * Testimonial section
  */
 export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Mary Elenius (UCF Full Stack Coding Bootcamp Instructor',
+      text: '"Stephen was a pleasure to have in class during our Spring cohort. He displayed a true committment to learning and showed a true ability to build sound and functional applications as exemplified in his class projects. I see him beginning a fruitful career in web development!"',
     },
   ],
 };
@@ -342,7 +331,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Please feel free to reach out with any professional or collaborative inquiries.',
   items: [
     {
       type: ContactType.Email,
